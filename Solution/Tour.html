@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brighton Times</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  
+  <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            background: #f1f1f1;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .center-cropped {
+            /* Center the image within the element */
+            height: 150px;
+            width: 150px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+  </head>
+  <body>
+
+        <div class="row">
+            <div class="col-md-4">
+            <div class="card">
+              <form action="" autocomplete="off" method="POST">
+                    <article class="card-group-item">
+                            <header class="card-header">
+                                <h6 class="title">Filter by Age</h6>
+                            </header>
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price1"
+                                               value="18000"/>
+                                        <span class="form-check-label">18000 - 25000</span><br>
+                                    </label>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price2"
+                                               value="25000"/>
+                                        <span class="form-check-label">25000 - 35000</span><br>
+                                    </label>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price3"
+                                               value="35000"/>
+                                        <span class="form-check-label">Above 35000</span><br>
+                                    </label>
+
+                                </div>
+                            </div> <!-- card-body.// -->
+                </div>
+                </article>
+ <hr style="border-top: 1px solid cyan">
+                <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Filter by Duration</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-group">
+                                <label class="form-check">
+                                    <input class="form-check-input" type="radio" name="duration" id="duration1"
+                                           value="18000"/>
+                                    <span class="form-check-label">18000 - 25000</span><br>
+                                </label>
+                                <label class="form-check">
+                                    <input class="form-check-input" type="radio" name="duration" id="duration2"
+                                           value="25000"/>
+                                    <span class="form-check-label">25000 - 35000</span><br>
+                                </label>
+                                <label class="form-check">
+                                    <input class="form-check-input" type="radio" name="duration" id="duration3"
+                                           value="35000"/>
+                                    <span class="form-check-label">Above 35000</span><br>
+                                </label>
+
+                            </div>
+                        </div> <!-- card-body.// -->
+            </div>
+            </article>
+
+            <hr style="border-top: 1px solid cyan">
+                <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Filter by Bound</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="form-group">
+                                <label class="form-check">
+                                    <input class="form-check-input" type="radio" name="bounding" id="bounding1"
+                                           value="18000"/>
+                                    <span class="form-check-label">Inbound</span><br>
+                                </label>
+                                <label class="form-check">
+                                    <input class="form-check-input" type="radio" name="bounding" id="bounding2"
+                                           value="25000"/>
+                                    <span class="form-check-label">Outbound</span><br>
+                                </label>
+                               
+
+                            </div>
+                        </div> <!-- card-body.// -->
+            </div>
+            </article>
+
+            <button type="button" class="btn btn-info" style="width:100%">Info</button>
+              </form>
+            </div>    
+            </div>
+
+            <div class="col-md-8">
+                    <div class="container" style="margin-bottom:60px">
+                            <div class="flex-row row" style="margin-top: 0px">
+                    <div class="col-sm-2 col-sm-6 col-sm-2">
+                            <div class="card shadow-lg" style="margin-bottom:10px">
+                                <img src="images/dog.jpg" alt="Avatar" style="width:100%">
+                              <div class="caption">
+                                <ul class="list-group">  
+                               <li class="list-group-item"><i class="flex-text text-muted" style="padding-left:10px; font-size:18sp"><img src="images/clock.png" style="width:18px; height:18px;"><b>&nbsp;3 Nights,4 Days</b></i>
+                                </li>    
+                                
+                                <li class="list-group-item">    <i class="flex-text text-muted" style="padding-left: 10px;"><img src="images/money.png" style="width:18px; height:18px"><b>&nbsp;100000ks</b></i>
+                                </li>
+                                <li class="list-group-item">
+                                <p>
+                                  <div class="row" style="text-align: center">
+                                    <div class="col-lg-12  ">
+                                      <button type="button" class="btn btn-warning" href="#" align:left style="width:150px;height:52px;text-align: center;">Detail</button>
+                                      <button type="button" class="btn btn-danger" href="#" align:right style="width:150px;height:52px">Call</button>
+                                    </div>
+                                    </div>
+                                </p>
+                              </li>
+                                </ul>
+                              </div>
+                              <!-- /.caption -->
+                            </div>
+                            <!-- /.thumbnail -->
+                          </div>  
+
+                          <div class="col-sm-2 col-sm-6 col-sm-2">
+                                <div class="card shadow-lg" style="margin-bottom:10px">
+                                    <img src="images/dog.jpg" alt="Avatar" style="width:100%">
+                                  <div class="caption">
+                                    <ul class="list-group">  
+                                   <li class="list-group-item"><i class="flex-text text-muted" style="padding-left:10px"><img src="images/clock.png" style="width:18px; height:18px"><b>&nbsp;3 Nights,4 Days</b></i>
+                                    </li>    
+                                    
+                                    <li class="list-group-item">  <i class="flex-text text-muted" style="padding-left: 10px;"><img src="images/money.png" style="width:18px; height:18px"><b>&nbsp;100000ks</b></i>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <p>
+                                      <div class="row" style="text-align: center">
+                                        <div class="col-lg-12  ">
+                                          <button type="button" class="btn btn-warning" href="#" align:left style="width:150px;height:52px;text-align: center;">Detail</button>
+                                          <button type="button" class="btn btn-danger" href="#" align:right style="width:150px;height:52px">Call</button>
+                                        </div>
+                                        </div>
+                                    </p>
+                                  </li>
+                                    </ul>
+                                  </div>
+                                  <!-- /.caption -->
+                                </div>
+                                <!-- /.thumbnail -->
+                              </div>  
+
+                              <div class="col-sm-2 col-sm-6 col-sm-2">
+                                    <div class="card shadow-lg" style="margin-bottom:10px">
+                                        <img src="images/dog.jpg" alt="Avatar" style="width:100%">
+                                      <div class="caption">
+                                        <ul class="list-group">  
+                                       <li class="list-group-item"><i class="flex-text text-muted" style="padding-left:10px"><img src="images/clock.png" style="width:18px; height:18px"><b>&nbsp;3 Nights,4 Days</b></i>
+                                        </li>    
+                                        
+                                        <li class="list-group-item">  <i class="flex-text text-muted" style="padding-left: 10px;"><img src="images/money.png" style="width:18px; height:18px"><b>&nbsp;100000ks</b></i>
+                                        </li>
+                                        <li class="list-group-item">
+                                        <p>
+                                          <div class="row" style="text-align: center">
+                                            <div class="col-lg-12  ">
+                                              <button type="button" class="btn btn-warning" href="#" align:left style="width:150px;height:52px;text-align: center;">Detail</button>
+                                              <button type="button" class="btn btn-danger" href="#" align:right style="width:150px;height:52px">Call</button>
+                                            </div>
+                                            </div>
+                                        </p>
+                                      </li>
+                                        </ul>
+                                      </div>
+                                      <!-- /.caption -->
+                                    </div>
+                                    <!-- /.thumbnail -->
+                                  </div>  
+
+                                  <div class="col-sm-2 col-sm-6 col-sm-2">
+                                        <div class="card shadow-lg" style="margin-bottom:10px">
+                                            <img src="images/dog.jpg" alt="Avatar" style="width:100%">
+                                          <div class="caption">
+                                            <ul class="list-group">  
+                                           <li class="list-group-item"><i class="flex-text text-muted" style="padding-left:10px"><img src="images/clock.png" style="width:18px; height:18px"><b>&nbsp;3 Nights,4 Days</b></i>
+                                            </li>    
+                                            
+                                            <li class="list-group-item">  <i class="flex-text text-muted" style="padding-left: 10px;"><img src="images/money.png" style="width:18px; height:18px"><b>&nbsp;100000ks</b></i>
+                                            </li>
+                                            <li class="list-group-item">
+                                            <p>
+                                              <div class="row" style="text-align: center">
+                                                <div class="col-lg-12  ">
+                                                  <button type="button" class="btn btn-warning" href="#" align:left style="width:150px;height:52px;text-align: center;">Detail</button>
+                                                  <button type="button" class="btn btn-danger" href="#" align:right style="width:150px;height:52px">Call</button>
+                                                </div>
+                                                </div>
+                                            </p>
+                                          </li>
+                                            </ul>
+                                          </div>
+                                          <!-- /.caption -->
+                                        </div>
+                                        <!-- /.thumbnail -->
+                                      </div>  
+
+                             </div>
+                             </div>
+                                  
+            </div>
+        </div>
+  </body>
+</html>
